@@ -1,0 +1,16 @@
+[package]
+name = "rfi-frequency"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "RFI frequency-basis prototype"
+publish = false
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+zstd = { version = "0.13", features = ["zstdmt"] }
+rayon = "1.10"
+
+[lints]
+workspace = true

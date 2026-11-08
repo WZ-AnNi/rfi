@@ -1,0 +1,15 @@
+[package]
+name = "rfi-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+description = "RFI new-format command line tool"
+publish = false
+
+[dependencies]
+rfi-frequency = { path = "../rfi-frequency" }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
+
+[lints]
+workspace = true

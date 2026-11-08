@@ -1,0 +1,5 @@
+[toolchain]
+channel = "nightly"
+components = ["clippy", "rustfmt", "rust-src"]
+targets = ["wasm32-unknown-unknown", "aarch64-unknown-linux-gnu", "riscv64gc-unknown-linux-gnu"]
+profile = "minimal"
